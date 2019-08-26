@@ -16,7 +16,9 @@ These algorithms can solve most problems. The "Evolution.java" program goes thro
     - Each new letter has an equal chance of being from either parent, along with a chance of mutation
 4. Go back to step 2.
 
-The mutation rate is critical in the evolutionary process: a low mutation rate will lead to a slow approach to a low hamming distance, but a larger mutation rate would make it far harder to converge perfect to the specified string.
+The mutation rate is critical in the evolutionary process: a low mutation rate will lead to a slow approach to a low hamming distance, but a larger mutation rate would make it far harder to converge perfect to the specified string. 
+
+An example of the output can be seen [here](https://pastebin.com/zEqAhtKP).
 
 ## Racing
 
