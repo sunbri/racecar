@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 import math
+import time
 from net import *
 
 # Game constants
@@ -111,7 +112,7 @@ def main():
     running = True
     
     # Starting variables
-    car_list = [Car() for i in range(600)]
+    car_list = [Car() for i in range(10)]
     wall = Wall()
     clock = pygame.time.Clock()
     gens = 1
@@ -171,8 +172,8 @@ def main():
                     y_loc = round(car.rect.center[1] + i*y)
                     if (wall.mask.get_at((x_loc, y_loc))):
                         car.n = i
-                        #pygame.draw.line(screen, (0, 0, 255), 
-                        #                 car.rect.center, (x_loc, y_loc), 1)
+                        pygame.draw.line(screen, (0, 0, 255), 
+                                         car.rect.center, (x_loc, y_loc), 1)
                         break
 
                 # Scan east
@@ -183,8 +184,8 @@ def main():
                     y_loc = round(car.rect.center[1] + i*x)
                     if (wall.mask.get_at((x_loc, y_loc))):
                         car.e = i
-                        #pygame.draw.line(screen, (0, 0, 255), 
-                        #                 car.rect.center, (x_loc, y_loc), 1)
+                        pygame.draw.line(screen, (0, 0, 255), 
+                                         car.rect.center, (x_loc, y_loc), 1)
                         break
 
                 # Scan west
@@ -195,8 +196,8 @@ def main():
                     y_loc = round(car.rect.center[1] - i*x)
                     if (wall.mask.get_at((x_loc, y_loc))):
                         car.w = i
-                        #pygame.draw.line(screen, (0, 0, 255), 
-                        #                 car.rect.center, (x_loc, y_loc), 1)
+                        pygame.draw.line(screen, (0, 0, 255), 
+                                         car.rect.center, (x_loc, y_loc), 1)
                         break
 
                 # Get neural net response
