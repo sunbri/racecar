@@ -34,7 +34,7 @@ There were two main roadblocks in implementing the neural net for racing.
 
 While working with the neural net, I settled with a simple net with two hidden layers, each with four neurons. Initializing the values from a Gaussian distribution seemed best, as biases with extremely large absolute value would be able to skew the result of the sigmoid function for each neuron to almost 1 and -1 each time. 
 
-The mutation rate also had to be tuned to ensure that there was enough variation in each generation to continue to evolve. Without a mutation rate of 0, it's not too difficul to end up with 600 cars that perform almost exactly the same, with no way to improve upon them at all. Testing showed that a mutation rate of approximately 10% was the best balance between keeping the "DNA" of the parents but still producing variable offspring.
+The mutation rate also had to be tuned to ensure that there was enough variation in each generation to continue to evolve. Without a mutation rate of 0%, it's not too difficul to end up with 600 cars that perform almost exactly the same, with no way to improve upon them at all. Testing showed that a mutation rate of approximately 10% was the best balance between keeping the "DNA" of the parents but still producing variable offspring.
 
 ###### Scaling the Features
 
