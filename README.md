@@ -1,6 +1,6 @@
 # Racecar
 
-The code here uses a genetic algorithm to evolve a neural net to teach cars to race around a racetrack. A video of what happens can be seen [here](https://www.youtube.com/watch?v=FLv4iKLI8pA). At the end, you can see one square make it entirely around the track. The racetrack itself was coded using PyGame.
+The code here uses a genetic algorithm to evolve a neural net to teach cars to race around a racetrack. A video of what happens can be seen [here](https://www.youtube.com/watch?v=FLv4iKLI8pA). At the end, you can see one square make it entirely around the track, so the cars did learn how to drive eventually. The racetrack itself was coded using PyGame.
 
 ## Genetic Algorithms
 
